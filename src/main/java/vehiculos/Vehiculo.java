@@ -31,13 +31,6 @@ public class Vehiculo {
         CantidadVehiculos++;
 
     }
-
-    public static String totalPorTipo() {
-        return "Automoviles: "+Automovil.getCantidadAutomoviles()+
-                "\nCamionetas: "+Camioneta.getCantidadCamionetas()+
-                "\nCamiones: "+Camion.getCantidadCamiones();
-    }
-
     public static int getCantidadVehiculos() {
         return Vehiculo.CantidadVehiculos;
     }
@@ -73,28 +66,5 @@ public class Vehiculo {
     public static void setCantidadVehiculos(int num) {
         Vehiculo.CantidadVehiculos =num;
     }
-    public void setPlaca(String pl) {
-        this.placa =pl;
-    }
-    public void setPuertas(int pu) {
-        this.puertas = pu;
-    }
-    public void setVelocidadMaxima( double vm) {
-        this.velocidadMaxima = vm;;
-    }
-    public void setNombre(String n) {
-        this.nombre = n;
-    }
-    public void setPrecio(double pr) {
-        this.precio = pr;
-    }
-    public void setPeso(double pe) {
-        this.peso = pe;
-    }
-    public void setTraccion( String tra) {
-        this.traccion = tra;
-    }
-    public void setFabricante(Fabricante Fab) {
-        this.fabricante = Fab;
-    }
+
 }

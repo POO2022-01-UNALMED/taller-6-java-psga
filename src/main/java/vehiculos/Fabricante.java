@@ -1,5 +1,3 @@
-
-
 package vehiculos;
 
 import java.util.ArrayList;
@@ -41,9 +39,6 @@ public class Fabricante {
                 Fabricante.listadoFabricantes.add(i.getFabricante());
             }
         }
-
-
-        //System.out.println(Fabricante.listadoFabricantes);
         HashMap<String, Integer> hm = new HashMap();
         for (int i = 0; i < Fabricante.listadoFabricantes.size(); i++) {
 
@@ -55,7 +50,6 @@ public class Fabricante {
                 hm.put(key, 1);
             }
         }
-        //System.out.println(hm.values());
         int max = Collections.max(hm.values());
 
         List<String> keys = new ArrayList<>();
